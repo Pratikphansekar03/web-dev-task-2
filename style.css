@@ -1,0 +1,147 @@
+*, body{ padding: 0; margin: 0; list-style-type: none; text-decoration: none; transition: all .3s linear;}
+body{ background: #f5f5f5; font-size: 14px; font-family: "Montserrat", sans-serif; line-height: normal; color: #000;}
+img{ width: 100%; height: auto;}
+.wrapbox{ width: min(1100px, 96%); margin: 0 auto;}
+
+.navsec{ padding: 10px 0; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; position: relative;}
+.navsec .wrapbox{ display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; gap: 0 20px;}
+.navsec .logo{ width: 200px;}
+.navsec .nav{ margin: 0 -10px; position: relative;}
+.navsec .nav li{ display: inline-block; vertical-align: middle; margin: 0 10px;}
+.navsec .nav li a{ font-size: 14px; font-weight: 500; color: #000; position: relative; padding: 10px 0; text-transform: uppercase ;}
+.navsec .nav li:hover a{ color: #f35828;}
+.navsec .nav li a::before{ content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: #f35828; transform: scaleX(0); transform-origin: center; transition: all .3s ease-in-out;}
+.navsec .nav li:hover a::before{ transform: scaleX(1);}
+.navsec .nav li.closebtn .close{ position: absolute; top: 8px; right: 15px; width: 30px; height: 30px; display: none;}
+.navsec .nav li.closebtn .close::before, .navsec .nav li.closebtn .close::after{ content: ""; position: absolute; top: 50%; left: 0; right: 0; transform: translateY(-50%); height: 3px; background: #f35828;}
+.navsec .nav li.closebtn .close::before{ transform: translateY(-50%) rotate(45deg);}
+.navsec .nav li.closebtn .close::after{ transform: translateY(-50%) rotate(-45deg);}
+.navsec .mobile_menu{ width: 30px; height: auto; aspect-ratio: 1/1; position: relative; cursor: pointer; display: none;}
+.navsec .mobile_menu span{ display: block; height: 3px; background: #f35828; position: absolute; top: 50%; left: 0; right: 0; transform: translateY(-50%);}
+.navsec .mobile_menu span::before{ content: ""; position: absolute; top: -7px; left: 0; right: 0; height: 3px; background: #f35828;}
+.navsec .mobile_menu span::after{ content: ""; position: absolute; bottom: -7px; left: 0; right: 0; height: 3px; background: #f35828;}
+
+.bannersec{ padding: 160px 0; color: #f35828; background: url(images/banner-bg-img.jpg) no-repeat top center; background-size: cover;}
+.bannersec .wrapbox{ width: min(900px, 96%);}
+.bannersec h1{ font-size: 46px; font-weight: 700;}
+.bannersec p{ font-size: 20px; font-weight: 500; margin: 15px 0;}
+.bannersec p span{ display: block;}
+.bannersec .banner-btn{ display: inline-block;}
+.bannersec .banner-btn a{ padding: 10px 45px; background: #f35828; color: #fff; font-size: 15px; font-weight: 400; display: block; border: 1px solid #f35828; transition: all .3s ease-in-out; border-radius: 4px;}
+.bannersec .banner-btn a:hover{ background: #fff; color: #f35828;}
+
+.aboutsec{ padding: 45px 0; font-size: 0;}
+.aboutsec .leftsec, .aboutsec .rightsec{ width: 48.5%; display: inline-block; vertical-align: middle;}
+.aboutsec .leftsec{ border: 8px solid #fff; box-sizing: border-box; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; border-radius: 4px;}
+.aboutsec .rightsec{ margin-left: 3%;}
+.aboutsec .rightsec #aboutrightsec{ max-height: 175px; overflow: hidden;}
+.aboutsec .rightsec #aboutrightsec.active{ max-height: unset;}
+.heading{ font-size: 36px; font-weight: 600; padding-bottom: 12px; position: relative;}
+.heading::before{ content: ""; position: absolute; bottom: 0; left: 0; width: 80px; height: 4px; background: #f35828; border-radius: 5px;}
+.aboutsec .rightsec p{ font-size: 18px; font-weight: 500; margin-top: 15px; line-height: 28px;}
+.rm-btn{ display: inline-block; margin-top: 15px;}
+.rm-btn a{ font-size: 18px; font-weight: 400; color: #f35828; padding-right: 10px; position: relative; display: block;}
+.rm-btn a::before{ content: ""; position: absolute; top: 50%; left: 100%; transform: translateY(-50%); background: url(images/down_arrow_icon.png) no-repeat; background-size: cover; width: 15px; height: 9px;}
+.rm-btn a.active::before{ transform: translateY(-50%) rotate(180deg);}
+
+.menusec{ padding: 45px 0;}
+.menusec ul{ margin: 20px 0;}
+.menusec ul li{ display: inline-block; font-size: 18px; font-weight: 400; background: #f35828; color: #f5f5f5; border: 1px solid #f35828; padding: 5px 30px; border-radius: 4px; cursor: pointer;}
+.menusec ul li:hover, .menusec ul li.active{ background: #f5f5f5; color: #f35828;}
+.menusec ul li+li{ margin-left: 15px;}
+.menusec .menu{ display: none !important;}
+.menusec .menu.active{ display: initial !important;}
+.menusec .menu .item{ padding: 10px; background: #fff; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; border-radius: 4px; margin: 10px;}
+.menusec .menu .item .item-img img{ object-fit: cover; aspect-ratio: 1/1;}
+.menusec .menu .item .item-content{ padding: 10px;}
+.menusec .menu .item .item-content h4{ font-size: 20px; font-weight: 600; color: #f35828;}
+.menusec .menu .item .item-content p{ font-size: 14px; font-weight: 400; line-height: 22px; margin-top: 10px; padding-right: 30px; position: relative;}
+.menusec .menu .owl-nav .owl-prev, .menusec .menu .owl-nav .owl-next{ position: absolute; bottom: 0; font-size: 0; width: 15px; height: 9px; background: url(images/down_arrow_icon.png) no-repeat; background-size: cover;}
+.menusec .menu .owl-nav .owl-prev{ left: calc(50% - 20px); transform: translateX(-50%) rotate(90deg);}
+.menusec .menu .owl-nav .owl-next{ left: calc(50% + 20px); transform: translateX(-50%) rotate(-90deg);}
+
+.reservesec{ padding: 45px 0; font-size: 0;}
+.reservesec .leftsec, .reservesec .rightsec{ display: inline-block; vertical-align: middle; width: 48.5%;}
+.reservesec .rightsec{ margin-left: 3%; border: 8px solid #fff; box-sizing: border-box; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+.reservesec .leftsec form{ margin-top: 30px;}
+.reservesec .leftsec form ul li{ margin-top: 15px;}
+.reservesec .leftsec form ul li input:not(input[type="submit"]){ width: 100%; padding: 10px 15px; outline: 0; font-size: 16px; font-weight: 400; border: 1px solid #f35828; border-radius: 4px; background: #f5f5f5; box-sizing: border-box; appearance: none;}
+.reservesec .leftsec form ul li input:not(input[type="submit"])::placeholder{ font-size: 16px; font-weight: 500; color: #000;}
+.reservesec .leftsec form ul li input[type="submit"]{ padding: 10px 40px; font-size: 18px; font-weight: 500; background: #f35828; color: #fff; border: 1px solid #f35828; border-radius: 4px; cursor: pointer;}
+.reservesec .leftsec form ul li input[type="submit"]:hover{ background: #f5f5f5; color: #f35828;}
+
+.contactsec .wrapbox{ padding: 45px 0; border-top: 1px solid #f35828; border-bottom: 1px solid #f35828;}
+.contactsec .innercontactsec{ display: flex; justify-content: space-between; align-items: flex-start; gap: 0 2%;}
+.contactsec .innercontactsec>li{ width: 20%;} 
+.contactsec .innercontactsec>li:first-child{ width: 40%;}
+.contactsec .f-logo{ width: 180px;}
+.contactsec p{ font-size: 16px; font-weight: 500; line-height: 26px; margin-top: 15px;}
+.contactsec h4{ font-size: 18px; font-weight: 600; margin-bottom: 15px; color: #f35828;}
+.contactsec .fnav li{ font-size: 16px; font-weight: 500;}
+.contactsec .fnav li+li{ margin-top: 10px;}
+.contactsec .fnav li a{ color: #000; position: relative; transition: all 0s;} 
+.contactsec .fnav.subnav:last-child li a{ padding-left: 25px;}
+.contactsec .fnav li a:hover{ color: #f35828;}
+.contactsec .fnav li a::before{ content: ""; position: absolute; top: 50%; left: 0; transform: translateY(-50%); width: 15px; height: auto; aspect-ratio: 1/1;}
+.contactsec .fnav li a.fb::before{ background: url(images/fb_icon.png) no-repeat; background-size: cover;}
+.contactsec .fnav li a.fb:hover::before{ background: url(images/hover_fb_icon.png) no-repeat; background-size: cover;}
+.contactsec .fnav li a.insta::before{ background: url(images/insta_icon.png) no-repeat; background-size: cover;}
+.contactsec .fnav li a.insta:hover::before{ background: url(images/hover_insta_icon.png) no-repeat; background-size: cover;}
+.contactsec .fnav li a.twt::before{ background: url(images/twitter_logo_icon.png) no-repeat; background-size: cover;}
+.contactsec .fnav li a.twt:hover::before{ background: url(images/hover_twitter_logo_icon.png) no-repeat; background-size: cover;}
+
+.copyrightsec{ padding: 10px 0; text-align: center;}
+.copyrightsec p{ font-size: 14px; font-weight: 400;}
+
+/* Responsive */
+@media only screen and (max-width:1024px){
+    .bannersec{ padding: 120px 0;}
+    .bannersec .wrapbox{ width: min(700px, 96%);}
+    .bannersec h1{ font-size: 40px;}
+    .bannersec p{ font-size: 18px; margin: 10px 0 15px;}
+    .bannersec .banner-btn a{ padding: 8px 30px; font-size: 15px;}
+    .heading{ font-size: 32px;}
+    .aboutsec .rightsec p{ font-size: 16px; line-height: 26px;}
+    .rm-btn a, .menusec ul li{ font-size: 16px;}
+    .contactsec p, .contactsec .fnav li{ font-size: 14px;}
+    .contactsec h4{ margin-bottom: 10px; font-size: 17px;}
+}
+@media only screen and (max-width:800px){
+    .navsec .mobile_menu{ display: block;}
+    .navsec .nav{ position: fixed; top: 0; right: 0; bottom: 0; width: 300px; background: #fff; z-index: 1; transform: translateX(100%); transform-origin: right; transition: all .3s linear; padding-top: 50px;}
+    .navsec .nav.active{ transform: translateX(0%);}
+    .navsec .nav li{ display: block; margin: 0;}
+    .navsec .nav li a{ display: block; padding: 15px; border-bottom: 1px solid #f35828;}
+    .navsec .nav li:first-child a{ border-top: 1px solid #f35828;}
+    .navsec .nav li a:hover{ background: #f35828; color: #fff;}
+    .navsec .nav li a::before{ display: none;}
+    .navsec .nav li.closebtn .close{ display: block;}
+}
+@media only screen and (max-width:640px){
+    .bannersec{ background: url(images/banner-bg-img.jpg) no-repeat top right; padding: 100px 0; background-size: cover;}
+    .aboutsec .leftsec, .aboutsec .rightsec, .reservesec .leftsec, .reservesec .rightsec{ width: 100%;}
+    .aboutsec .rightsec, .reservesec .rightsec{ margin: 20px 0 0 0;}
+    .aboutsec .rightsec #aboutrightsec{ max-height: 145px;}
+    .contactsec .innercontactsec{ flex-flow: column nowrap; align-items: center; text-align: center; gap: 25px;}
+    .contactsec .innercontactsec>li, .contactsec .innercontactsec>li:first-child{ width: 100%;}
+    .contactsec .fnav{ display: flex; flex-flow: row wrap; justify-content: center; gap: 15px; align-items: center;}
+    .contactsec .fnav li+li{ margin: 0;}
+    .contactsec .wrapbox{ padding: 30px 0;}
+    .contactsec .f-logo{ margin: 0 auto;}
+    .contactsec p, .contactsec .fnav li{ font-size: 15px;}
+}
+@media only screen and (max-width:480px){
+    .wrapbox{ width: 94%;}
+    .navsec .logo{ width: 160px;}
+    .heading{ font-size: 28px;}
+    .bannersec{ padding: 50px 0;}
+    .bannersec h1{ font-size: 30px;}
+    .bannersec p{ font-size: 16px;}
+    .bannersec .banner-btn a{ padding: 5px 25px; font-size: 15px;}
+}
+@media only screen and (max-width:360px){
+    .bannersec{ padding: 30px 0;}
+    .bannersec .wrapbox{ width: min(200px, 96%); margin: 0 4%;}
+    .menusec ul li{ font-size: 14px; padding: 5px 20px;}
+    .menusec ul li+li{ margin-left: 10px;}
+}

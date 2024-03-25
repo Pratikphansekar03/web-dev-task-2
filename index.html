@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Corner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrap">
+        <div class="navsec" id="home">
+            <div class="wrapbox">
+                <div class="logo"><a href="#home"><img src="images/logo.png" alt="logo"></a></div>
+                <ul class="nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="closebtn"><div class="close" onclick="mobileMenu()"></div></li>
+                </ul>
+                <div class="mobile_menu" onclick="mobileMenu()"><span></span></div>
+            </div>
+        </div>
+
+        <div class="bannersec">
+            <div class="wrapbox">
+                <h1>Delicious Food</h1>
+                <p>Good Food Is The Foundation Of <span>Genuine Happiness</span></p>
+                <div class="banner-btn"><a href="#menu">View More</a></div>
+            </div>
+        </div>
+
+        <div class="aboutsec" id="about">
+            <div class="wrapbox">
+                <div class="leftsec"><img src="images/abousec-img.png" alt="abousec-img"></div>
+                <div class="rightsec">
+                    <div id="aboutrightsec">
+                        <h2 class="heading">Our Story</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt soluta, doloremque ratione veniam repellendus rem, quasi optio hic vel laboriosam quaerat earum? Ea totam ab, illo ullam officia repudiandae eligendi?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum odio aliquid inventore sequi, ducimus fuga, praesentium recusandae eaque ullam est id autem consequuntur neque voluptatem incidunt libero a blanditiis repellendus?</p>
+                    </div>
+                    <div class="rm-btn" onclick="expand()"><a href="javascript:void(0)" id="aboutbtn">Read More</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menusec" id="menu">
+            <div class="wrapbox">
+                <h2 class="heading">Popular Menu</h2>
+                <ul>
+                    <li id="mrngmeal" onclick="tab1()" class="active">Breakfast</li>
+                    <li id="aftmeal" onclick="tab2()">Lunch</li>
+                    <li id="evemeal" onclick="tab3()">Dinner</li>
+                </ul>
+                <div class="menu owl-carousel breakfast-gallery active" id="breakfast">
+                    <div class="item">
+                        <div class="item-img"><img src="images/breakfast-img1.jpg" alt="breakfast-img1"></div>
+                        <div class="item-content">
+                            <h4>Lorem</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem, debitis, inventore facilis facere quidem, nulla dolore obcaecati sapiente in blanditiis. Officiis eum at vero doloremque cupiditate. Nihil, quasi quidem?</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img"><img src="images/breakfast-img2.jpg" alt="breakfast-img2"></div>
+                        <div class="item-content">
+                            <h4>Lorem</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem, debitis, inventore facilis facere quidem, nulla dolore obcaecati sapiente in blanditiis. Officiis eum at vero doloremque cupiditate. Nihil, quasi quidem?</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img"><img src="images/breakfast-img3.jpg" alt="breakfast-img3"></div>
+                        <div class="item-content">
+                            <h4>Lorem</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem, debitis, inventore facilis facere quidem, nulla dolore obcaecati sapiente in blanditiis. Officiis eum at vero doloremque cupiditate. Nihil, quasi quidem?</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img"><img src="images/breakfast-img4.jpg" alt="breakfast-img4"></div>
+                        <div class="item-content">
+                            <h4>Lorem</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem, debitis, inventore facilis facere quidem, nulla dolore obcaecati sapiente in blanditiis. Officiis eum at vero doloremque cupiditate. Nihil, quasi quidem?</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img"><img src="images/breakfast-img5.jpg" alt="breakfast-img5"></div>
+                        <div class="item-content">
+                            <h4>Lorem</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem, debitis, inventore facilis facere quidem, nulla dolore obcaecati sapiente in blanditiis. Officiis eum at vero doloremque cupiditate. Nihil, quasi quidem?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu owl-carousel lunch-gallery" id="lunch">
+                    <div class="item">
+                        <div class="item-img"><img src="images/lunch-img1.jpg" alt="lunch-img1"></div>
+                        <div class="item-content">
+                            <h4>Lorem</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem, debitis, inventore facilis facere quidem, nulla dolore obcaecati sapiente in blanditiis. Officiis eum at vero doloremque cupiditate. Nihil, quasi quidem?</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img"><img src="images/lunch-img2.jpg" alt="lunch-img2"></div>
+                        <div class="item-content">
+                            <h4>Lorem</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem, debitis, inventore facilis facere quidem, nulla dolore obcaecati sapiente in blanditiis. Officiis eum at vero doloremque cupiditate. Nihil, quasi quidem?</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img"><img src="images/lunch-img3.jpg" alt="lunch-img3"></div>
+                        <div class="item-content">
+                            <h4>Lorem</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem, debitis, inventore facilis facere quidem, nulla dolore obcaecati sapiente in blanditiis. Officiis eum at vero doloremque cupiditate. Nihil, quasi quidem?</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img"><img src="images/lunch-img4.jpg" alt="lunch-img4"></div>
+                        <div class="item-content">
+                            <h4>Lorem</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem, debitis, inventore facilis facere quidem, nulla dolore obcaecati sapiente in blanditiis. Officiis eum at vero doloremque cupiditate. Nihil, quasi quidem?</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img"><img src="images/lunch-img5.jpg" alt="lunch-img5"></div>
+                        <div class="item-content">
+                            <h4>Lorem</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem, debitis, inventore facilis facere quidem, nulla dolore obcaecati sapiente in blanditiis. Officiis eum at vero doloremque cupiditate. Nihil, quasi quidem?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu owl-carousel dinner-gallery" id="dinner">
+                    <div class="item">
+                        <div class="item-img"><img src="images/dinner-img1.jpg" alt="dinner-img1"></div>
+                        <div class="item-content">
+                            <h4>Lorem</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem, debitis, inventore facilis facere quidem, nulla dolore obcaecati sapiente in blanditiis. Officiis eum at vero doloremque cupiditate. Nihil, quasi quidem?</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img"><img src="images/dinner-img2.jpg" alt="dinner-img2"></div>
+                        <div class="item-content">
+                            <h4>Lorem</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem, debitis, inventore facilis facere quidem, nulla dolore obcaecati sapiente in blanditiis. Officiis eum at vero doloremque cupiditate. Nihil, quasi quidem?</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img"><img src="images/dinner-img3.jpg" alt="dinner-img3"></div>
+                        <div class="item-content">
+                            <h4>Lorem</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem, debitis, inventore facilis facere quidem, nulla dolore obcaecati sapiente in blanditiis. Officiis eum at vero doloremque cupiditate. Nihil, quasi quidem?</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-img"><img src="images/dinner-img4.jpg" alt="dinner-img4"></div>
+                        <div class="item-content">
+                            <h4>Lorem</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates rem, debitis, inventore facilis facere quidem, nulla dolore obcaecati sapiente in blanditiis. Officiis eum at vero doloremque cupiditate. Nihil, quasi quidem?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reservesec" id="reservation">
+            <div class="wrapbox">
+                <div class="leftsec">
+                    <h2 class="heading">Book Reservation</h2>
+                    <form method="post">
+                        <ul>
+                            <li><input type="text" placeholder="Full Name" class="ip" required></li>
+                            <li><input type="number" placeholder="Table For People" class="ip" required></li>
+                            <li><input type="datetime-local" pattern="\d{1,2}/\d{1,2}/\d{4}/" placeholder="Date" class="ip" required></li>
+                            <li><input type="tel" placeholder="Phone Number" class="ip" required></li>
+                            <li><input type="submit" class="submit" value="Book Your Table" onclick="ipField()"></li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="rightsec"><img src="images/reservesec-img.jpg" alt="reservesec-img"></div>
+            </div>
+        </div>
+
+        <div class="contactsec" id="contact">
+            <div class="wrapbox">
+                <ul class="innercontactsec">
+                    <li>
+                        <div class="f-logo"><img src="images/logo.png" alt="logo"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ea quaerat sint magni voluptate.</p>
+                    </li>
+                    <li>
+                        <ul class="fnav">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#reservation">Reservation</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Locations</h4>
+                        <ul class="fnav subnav">
+                            <li>Girgaon</li>
+                            <li>Borivali</li>
+                            <li>Malad</li>
+                            <li>Bhayandar</li>
+                            <li>Dadar</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Social</h4>
+                        <ul class="fnav subnav">
+                            <li><a href="javascript:void(0)" class="fb">Facebook</a></li>
+                            <li><a href="javascript:void(0)" class="insta">Instagram</a></li>
+                            <li><a href="javascript:void(0)" class="twt">Twitter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyrightsec">
+            <div class="wrapbox">
+                <p>Copyright &copy; 2024 pratikinfotech.in</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        let rmbtn = document.querySelector(".rm-btn");
+        let rightsec = document.getElementById("aboutrightsec");
+        let aboutbtn = document.getElementById("aboutbtn");
+        function expand(){
+            if(rightsec.classList.contains("active")){
+                rightsec.classList.remove("active");
+                aboutbtn.classList.remove("active");
+                aboutbtn.innerHTML = "Read More";
+            }
+            else{
+                rightsec.classList.add("active");
+                aboutbtn.classList.add("active");
+                aboutbtn.innerHTML = "Read Less";
+            }
+        }
+
+        let mrngmeal = document.getElementById("mrngmeal");
+        let aftmeal = document.getElementById("aftmeal");
+        let evemeal = document.getElementById("evemeal");
+        let breakfast = document.getElementById("breakfast");
+        let lunch = document.getElementById("lunch");
+        let dinner = document.getElementById("dinner");
+        function tab1(){
+            if(breakfast.classList.contains("active")){
+                breakfast.classList.remove("active");
+                mrngmeal.classList.remove("active");
+            }
+            else{
+                breakfast.classList.add("active");
+                mrngmeal.classList.add("active");
+                lunch.classList.remove("active");
+                aftmeal.classList.remove("active");
+                dinner.classList.remove("active");
+                evemeal.classList.remove("active");
+            }
+        }
+        function tab2(){
+            if(lunch.classList.contains("active")){
+                lunch.classList.remove("active");
+                aftmeal.classList.remove("active");
+            }
+            else{
+                lunch.classList.add("active");
+                aftmeal.classList.add("active");
+                breakfast.classList.remove("active");
+                mrngmeal.classList.remove("active");
+                dinner.classList.remove("active");
+                evemeal.classList.remove("active");
+            }
+        }
+        function tab3(){
+            if(dinner.classList.contains("active")){
+                dinner.classList.remove("active");
+                evemeal.classList.remove("active");
+            }
+            else{
+                dinner.classList.add("active");
+                evemeal.classList.add("active");
+                breakfast.classList.remove("active");
+                mrngmeal.classList.remove("active");
+                lunch.classList.remove("active");
+                aftmeal.classList.remove("active");
+            }
+        }
+
+        let iptext = document.querySelector("input[type='text']");
+        let ipnum = document.querySelector("input[type='number']");
+        let ipdate = document.querySelector("input[type='datetime-local']");
+        let iptel = document.querySelector("input[type='tel']");
+        let submit = document.querySelector(".submit");
+        function ipField(){ 
+            if(iptext.value=="" || ipnum.value=="" || ipdate.value=="" || iptel.value==""){
+                alert("Please fill the deatils first!!!");
+            }
+            else{
+                alert("You reservation is done...");
+            }
+        }
+
+        let nav = document.querySelector(".nav");
+        function mobileMenu(){
+            if(nav.classList.contains("active")){
+                nav.classList.remove("active");
+            }
+            else{
+                nav.classList.add("active");
+            }
+        }
+    </script>
+    <script>
+        $('.breakfast-gallery').owlCarousel({
+            loop:false,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                800:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+        });
+        $('.lunch-gallery').owlCarousel({
+            loop:false,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                800:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+        });
+        $('.dinner-gallery').owlCarousel({
+            loop:false,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                800:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+        });
+    </script>
+</body>
+</html>
